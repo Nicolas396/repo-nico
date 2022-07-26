@@ -27,7 +27,6 @@ header {
   grid-area: header;
   position: fixed;
   z-index: 1;
-
 }
 
 .botones {
@@ -57,9 +56,8 @@ main {
   height: 700px;
   width: 100%;
   grid-area: main;
-  position: relative ;
+  position: relative;
   top: 200px;
-  
 }
 
 h1 {
@@ -71,24 +69,19 @@ h1 {
   height: 100px;
 }
 
-
-
-
 .videos {
   display: flex;
   justify-content: space-between;
   margin-left: 30px;
   margin-right: 30px;
-
 }
 
-.vids iframe{
+.vids iframe {
   height: 200px;
   width: 350px;
 }
 .vid1 {
   margin: 20px;
- 
 }
 .vid2 {
   margin: 20px;
@@ -139,16 +132,17 @@ footer {
 .todosLos {
   margin-left: 150px;
 }
-@media screen and (max-width: 1100px){
-  .videos .vid3 {display: none};
- 
+@media screen and (max-width: 1100px) {
+  .videos .vid3 {
+    display: none;
+  }
 }
 @media screen and (max-width: 980px) {
   .botones ul li {
     display: block;
     align-items: center;
   }
-  .vids iframe{
+  .vids iframe {
     height: 200px;
     width: 300px;
   }
@@ -176,7 +170,7 @@ footer {
     padding: 20px;
     align-items: center;
   }
- 
+
   .vid1 {
     margin: 20px;
     margin-top: 0px;
@@ -191,20 +185,19 @@ footer {
   /* foot */
 
   footer {
-height: auto;
-height: 90px;
+    height: auto;
+    height: 90px;
   }
-  .foot{
+  .foot {
     justify-content: center;
     align-items: center;
     position: relative;
-  bottom: 3em;
+    bottom: 3em;
   }
-.foot div {
-  align-items: center;
-  margin: auto;
-  
-}
+  .foot div {
+    align-items: center;
+    margin: auto;
+  }
   .todosLos {
     display: none;
   }
@@ -221,41 +214,39 @@ height: 90px;
   .botonesFooter ul li {
     padding: 2em;
   }
+}
+@media screen and (max-width: 480px) {
+  .botones {
+    display: none;
+  }
+  .vids iframe {
+    height: 150px;
+    width: 280px;
+  }
 
-}
-@media screen and (max-width: 480px){
-.botones{
-  display: none;
-  
-}
-.vids iframe{
-  height: 150px;
-  width: 280px;
-}
+  footer {
+    height: 5em;
+  }
 
-footer {
-  height: 5em;
-}
-
-.botonesFooter ul li {
-  padding: 0.3em;
-}
-header{
-  flex-direction: column;
+  .botonesFooter ul li {
+    padding: 0.3em;
+  }
+  header {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-main {
-  flex-direction: column;
+  }
+  main {
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.foot {
-  position: relative;
-  top: 6px;
-}
-footer{
-  align-items: center;
-}
+  .foot {
+    position: relative;
+    top: 6px;
+  }
+  footer {
+    align-items: center;
+  }
 }
